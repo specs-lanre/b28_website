@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Content Rotator</title>
+	
+	<style>
+	.content{height:250px;width:300px;padding:50px;border:solid 1px blue;}
+	</style>
+  </head>
+  <body>
+<div class="content" id="content">
+    <h1>Business Outcomes</h1>
+</div>
+
+
+<div style="text-align:center; width:400px; padding:20px;">
+<button onClick="cChange1()">One</button>
+<button onClick="cChange2()">Two</button>
+<button onClick="cChange3()">Three</button>
+</div>
+<script>
+
+function cChange1(){
+let x =document.getElementById('content')
+x.innerHTML="<h1>Our Technical <br>Expertise</h1>"
+x.style.color="white"
+x.style.background="black"
+
+}
+
+function cChange2(){
+let x =document.getElementById('content')
+x.innerHTML="<h1>Our Baseline <br>Services</h1>"
+x.style.color="yellow"
+x.style.background="blue"
+
+}
+
+
+function cChange3(){
+let x =document.getElementById('content')
+x.innerHTML="<h1>Our Target<br>Clientele</h1>"
+x.style.color="white"
+x.style.background="red"
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,47 @@
+
+<style>
+rgin:110px;padding:50px;background:yellow;}
+
+</style>
+
+
+
+<div class="d1" id="d1">
+<button onclick="message()">
+Show message
+</button>
+
+
+<button onclick="ask()">
+Leave page
+</button>
+
+
+
+</div>
+<script>
+//alert("Hello an alert from JS")
+
+prompt("Enter email ")
+
+
+
+function message(){
+alert("Hello from function")
+}
+
+function ask(){
+x= confirm("Exit this page ?")
+console.log(x)
+if(x){
+window.location="nextpage.html"
+}
+else{
+document.getElementById('d1').innerHTML="<h3>You chose to stay !</h3>"
+}
+
+
+}
+
+
+</script>

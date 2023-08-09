@@ -1,0 +1,110 @@
+
+
+
+<style>
+form{border-width:2px;width:450px;border-radius:10px;
+border-color:blue;padding:20px 10px;
+border-style:solid;height:auto;display:inline-block;}
+
+label{display:inline-block;color:blue;font-family:Arial;
+width:90%;font-size:18px;padding:10px;
+}
+
+.for-input input{display:inline-block;color:blue;font-family:Arial;
+width:90%;font-size:20px;padding:10px;
+border:solid 1px blue;
+}
+
+
+.for-radio input{display:inline-block;color:blue;font-family:Arial;
+width:20%;font-size:20px;padding:10px;
+border:solid 1px blue;
+}
+
+.for-checkbox input{display:inline-block;color:blue;font-family:Arial;
+width:5%;font-size:20px;padding:10px;
+border:solid 1px blue;
+}
+
+
+select{display:inline-block;color:blue;font-family:Arial;
+width:90%;font-size:20px;padding:10px;
+border:solid 1px blue;
+}
+
+
+button{display:inline-block;color:white;font-family:Arial;
+width:40%;font-size:20px;padding:10px 0px;margin:10px 0px;
+border:solid 1px blue;background:blue;
+}
+
+
+button:hover{color:blue;background:white;
+}
+button,select,input{border-radius:10px;}
+</style>
+<div style="text-align:center;">
+
+<form method="GET"class="xform" style="">
+<div class="for-input">
+<label for="username">Enter Username</label>
+<input type="text" name="username" id="username" value="tombot" required  >
+</div>
+<div class="for-input">
+<label for="email">Enter Email</label>
+<input type="text" name="email" id="email"  >
+</div>
+
+
+<div class="for-input">
+<label for="password">Enter Password</label>
+<input type="password" name="password" id="password"  required>
+
+</div>
+
+
+<div class="for-input">
+
+<label for="password2">Confirm Password</label>
+<input type="password" name="password2" id="password2"  required>
+</div>
+
+
+<div class="for-radio">
+
+<label for="gender">Gender</label>
+<span>Male</span>
+<input type="radio" name="gender" value="male" id="gender">
+<span>Female</span>
+<input type="radio" name="gender" value="female" id="gender">
+</div>
+
+
+<div class="for-checkbox">
+<label for="workoption">Select work type</label>
+<span>Training :</span>
+<input  id="workoption" type="checkbox" value="training" name="workoption">
+<span>Internship :</span>
+<input  id="workoption" type="checkbox" value="internship" name="workstatus1">
+<span>Permanent:</span>
+<input  id="workoption" type="checkbox" value="permanent" name="workstatus2">
+<span>Remote :</span>
+<input  id="workoption" type="checkbox" value="remote" name="worktype">
+
+</div>
+
+
+<div class="for-select">
+<label for="location">Choose Location</label>
+<select name="location" id="location">
+<option value="lag">Lagos</option>
+<option value="abj">Abuja</option>
+<option value="ph">PortHarcourt</option>
+
+</select>
+</div>
+<button >Post info</button>
+
+</form>
+
+</div>
